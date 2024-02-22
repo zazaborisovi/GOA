@@ -1,0 +1,16 @@
+html{
+    text-align: center;
+    font-size: 32px;
+    background-color: rgb(171, 171, 171);
+}
+#topright{
+    text-align:right;
+}
+#page2{
+    background-color: rgb(171, 171, 171);
+    color: green;
+    text-decoration:none;
+    font-weight:bolder;
+    border: 3px solid black;
+    border-radius:8px;
+}

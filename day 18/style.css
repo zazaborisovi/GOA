@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+p , h1{
+    color: orange;
+    font-family: "Nosifer" , italic;
+    font-weight: 800px;
+    text-decoration-line: overline;
+    text-decoration-color: green;
+    text-decoration-style:wavy;
+    font-size: 32px;
+}
+body{
+    background-color: rgb(35, 30, 30);
+}

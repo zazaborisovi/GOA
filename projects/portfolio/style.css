@@ -1,0 +1,26 @@
+body{
+    background-color: rgba(204, 204, 204, 0.809);
+    text-align: center;
+}
+#fornav{
+    background-color:rgb(16, 18, 68);
+}
+img{
+    border-radius: 132px;
+    border-color: rgb(16, 18, 68);
+    border-style:solid;
+}
+a{
+    color: blue;
+}
+#msg{
+    width: 200px;
+    height: 60px;
+}
+input{
+    width:200px;
+    height:20px;
+}
+form{
+    background-color: rgb(16, 18, 68);
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+        }
+        .parent{
+            height: 200px;
+            width: 300px;
+            background:linear-gradient(black 50%, green 50%);
+            transform: translate(1500px , 500px);
+            transition: 10s;
+            text-align: center;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        div:hover{
+            transform: rotate(180deg);
+        }
+        .child{
+            display: flex;
+            transform: rotate(180deg);
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">
+            <h1 style="color: green;">GOA</h1>
+        </div>
+        <div class="child">
+            <h1 >MATRIX</h1>
+        </div>
+    </div>
+</body>
+</html>

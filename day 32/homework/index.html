@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+     <body>
+        <form>
+            <h1>Sign Up</h1>
+            <input type="text" name="Fname" placeholder="First Name" class="names" required>
+            <input type="text" name="surname" placeholder="Surname" class="names" required><br><br>
+            <input name="email" type="email" type="number" placeholder="Mobile Number Or Email" class="reg" required><br><br>
+            <input name="password" type="password" placeholder="New Password" class="reg" required><br><br>
+            <label for="age">date of birth</label><br>
+            <input type="number" class="age" name="day" min="1" max="31" placeholder="day" required>
+            <input type="number" class="age" name="month" min="1" max="12" placeholder="month" required>
+            <input type="number" class="age" name="year" min="1900" max="2024" placeholder="year" required>
+            <label for="gender">Gender</label><br>
+            <input type="radio" name="Gender" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="Gender" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Custom">
+            <label for="Custom">Custom</label><br><br>
+            <button>Sign Up</button>
+        </form>
+     </body>
+</html>

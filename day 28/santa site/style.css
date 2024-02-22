@@ -1,0 +1,16 @@
+html{
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    background-color: rgba(236, 231, 231, 0.895);
+    background-image: url(background.avif);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h2{
+
+    text-decoration: wavy;
+    text-decoration-line: overline;
+    text-decoration-color: green;
+
+}

@@ -1,0 +1,31 @@
+.main{
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+img{
+    height: 60px;
+}
+body{
+    background-color: darkslategrey;
+    font-size: larger;
+}
+a{
+    text-decoration: none;
+    color: green;
+}
+.img{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid black;
+    border-radius: 32px;
+}
+.header{    
+    display: flex;
+    width: 300px;
+    gap: 20px;
+}
+.header :hover{
+    color: white;
+}

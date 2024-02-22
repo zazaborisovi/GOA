@@ -1,0 +1,23 @@
+body{
+    background-color: gainsboro;
+    text-align: center;
+    font-size: large;
+}
+div{
+    width: 300px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+b{
+    color: rgb(208, 3, 3);
+}
+button{
+    color: black;
+    border-radius: 8px;
+    background-color: rgb(236, 236, 236);
+}
+#continue{
+    background-color: rgba(62, 142, 248, 0.868);
+}

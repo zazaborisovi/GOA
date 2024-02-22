@@ -1,0 +1,36 @@
+#placeholder{
+    height: 250px;
+}
+#forms{
+    width: 750px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left; 
+}
+body{
+    background-color: gainsboro;
+    font-size: large;
+}
+#Mid{
+    width: 84px;
+}
+.NaP{
+    width: 200px;
+}
+#adress{
+    width: 300px;
+}
+#T0{
+    border-color: black;
+    margin-left: 300px;
+}
+label{
+    margin-left: 150px;
+}
+#Table{
+    margin-left: 300;
+}
+h2{
+    text-align: center;
+}

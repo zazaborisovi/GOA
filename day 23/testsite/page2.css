@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    font-size:32px;
+    background-color: rgb(171, 171, 171);
+}
+a{
+    background-color: rgb(171, 171, 171);
+    color: green;
+    text-decoration:none;
+    font-weight:bolder;
+    border: 3px solid black;
+    border-radius:8px;
+}
+#page3{
+    text-align: right;
+}
+#main{
+    text-align:left;
+}

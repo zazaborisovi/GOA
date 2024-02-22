@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>day 30 homework 1</title>
+        <link rel="stylesheet" href="./hw1 styles.css">
+    </head>
+     <body>
+        <div>
+        <h2>Student Registration Form</h2>
+        <form>
+            <label for="Fname">First name: &nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="Fname" placeholder="enter your first name here" class="enterance">
+            <br><br>
+            <label for="Lname">Last name: &nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="Lname" placeholder="enter your last name here" class="enterance">
+            <br><br>
+            <label for="Email">Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="email" id="Email" placeholder="it should contain @" class="enterance">
+            <br><br>
+            <label for="mobile">Mobile: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="number" id="mobile" maxlength="10" class="enterance" placeholder="only 10 digits are allowed">
+            <br><br>
+            <label for="gender">gender: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input name="gender" class="gender" type="radio" id="male">
+            <label for="male">Male</label>&nbsp&nbsp&nbsp&nbsp
+            <input name="gender" class="gender" type="radio" id="female">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="DOB">Date of Birth: &nbsp</label>
+            <input type="date" class="enterance">
+            <br><br>
+            <label for="Adress">Adress: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <textarea height="32px" width="800px"></textarea>
+            <br><br>
+            <label for="city">City: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="city" class="enterance">
+            <br><br>
+            <label for="Apin">Area PIN: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="Apin" class="enterance">
+            <br><br>
+            <label for="state">State: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="text" id="state" class="enterance">
+            <br><br>
+            <label for="qual">Qualification: &nbsp&nbsp</label>
+            <select>
+                <option>Select Qualification</option>
+            </select>
+            <br><br>
+            <label for="spec" height="32px">Specialisation</label>
+            <input type="checkbox" class="spec">Computer science <br><div id="checkbox">
+            <input type="checkbox" class="spec">Information technology<br>
+            <input type="checkbox" class="spec">Computer architecture<br>
+            <input type="checkbox" class="spec">Tele communication<br>
+            </div>
+            <label for="PW">Password &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+            <input type="password" class="enterance"><br><br>
+            <button>Register</button>
+        </form>
+        </div>
+     </body>
+</html>

@@ -1,0 +1,39 @@
+h2{
+    color: brown;
+    text-align: right;
+    text-decoration: underline;
+}
+body{
+    font-size: large;
+    background-color: gainsboro;
+}
+.enterance{
+    width: 800px;
+    height: 32px;
+    border-radius: 6px;
+    text-align: center;
+}
+div{
+    width: 1000px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+textarea{
+    height: 32px;
+}
+#checkbox{
+    width: 795px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+button{
+    background-color: rgba(8, 131, 8, 0.735);
+    color:white;
+    height: 42px;
+    width: 128px;
+    border-radius: 4px;
+}
