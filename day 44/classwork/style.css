@@ -1,0 +1,12 @@
+.parent{
+    border: 10px solid blue;
+    height: 300px;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+}
+.child{
+    border: 5px solid cyan;
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.188);
+}
