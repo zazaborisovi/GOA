@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 99%;
+}
+.parent{
+    display: grid;
+    width: 99%;
+    height: 100vh;
+    grid-template-columns: 8;
+    grid-template-rows: 9;
+    gap: 10px;
+    text-align: center;
+    font-size: larger;
+}
+.child{
+    border: 5px solid black;
+}
+.header{
+    grid-column: 1/8;
+    grid-row: 1/2;
+    background-color: blueviolet;
+}
+.sidebar{
+    grid-column: 1/2;
+    grid-row: 2/8;
+    background-color: lime;
+}
+.content1{
+    grid-column: 2/8;
+    grid-row: 2/5;
+    background-color: blue;
+}
+.content2{
+    grid-column: 2/5;
+    grid-row: 5/8;
+    background-color: blue;
+}
+.content3{
+    grid-column: 5/8;
+    grid-row: 5/8;
+    background-color: blue;
+}
+.footer{
+    grid-column: 1/8;
+    grid-row: 8/9;
+    background-color: blueviolet;
+}
