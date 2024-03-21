@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Clicker Site</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p id="PointsDisplay">0</p>
+    <button onclick="Points()">Click Here To Gain Point</button>
+
+    <p id="PointsDisplayV2">0</p>
+    <button onclick="PointsV2()">Click Here To Gain 2 Points</button>
+
+    <p id="Both">0</p>
+    <button onclick="sum()">Click Here To Sum Both Points</button>
+    
+    <script>
+        let counter = 0
+
+        function Points() {
+            counter += 1
+            document.getElementById("PointsDisplay").textContent = counter
+        }
+
+        let counterV2 = 0
+        
+        function PointsV2(){
+            counterV2 += 2
+            document.getElementById("PointsDisplayV2").textContent = counterV2
+        }
+
+        function sum(){
+            document.getElementById("Both").textContent = counter + counterV2
+        }
+
+    </script>
+
+</body>
+</html>

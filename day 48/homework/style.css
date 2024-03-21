@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #051118;
+}
+img{
+    width: 500px;
+    height: 500px;
+}
+.Prv{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    width: 75px;
+    height: 525px;
+    background-color: rgba(255, 0, 0, 0.785);
+}
+.Nxt{
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: 75px;
+    height: 525px;
+    background-color: rgba(0, 128, 0, 0.75);
+}
+@media screen and (max-width:650px){
+    img{
+        width: 300px;
+        height: 300px;
+    }
+    .Prv{
+        height: 315px;
+    }
+    .Nxt{
+        height: 315px;
+    }
+    
+}
