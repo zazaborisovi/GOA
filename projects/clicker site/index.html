@@ -2,37 +2,37 @@
 <head>
     <title>Clicker Site</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/57925fd35f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p id="PointsDisplay">0</p>
-    <button onclick="Points()">Click Here To Gain Point</button>
+    <div class="parent">
+        <div class="counter">
+            <p id="PointsDisplay">0</p> <!--<button class="NextButton" onclick="Buttons()"></button>-->
+        </div>
+        <div class="child clickers">
+            <div class="Buttons">
+                <button onclick="Points() , buyEnable()" class="myButton"><h1>+1 <i class="fa-solid fa-arrow-pointer"></i></h1></button> 
+                <button onclick="PointsV2() , buyEnable()" id="NB1" class="Next myButton" ><h1>+2 <i class="fa-solid fa-arrow-pointer"></i></h1></button>
+                <button onclick="PointsV3() , buyEnable()" id="NB2" class="Next myButton"><h1>+4 <i class="fa-solid fa-arrow-pointer"></i></h1></button>
+                <button onclick="PointsV4() , buyEnable()" id="NB3" class="Next myButton"><h1>+8 <i class="fa-solid fa-arrow-pointer"></i></h1></button>
+                <button onclick="PointsV5() , buyEnable()" id="NB4" class="Next myButton"><h1>+16 <i class="fa-solid fa-arrow-pointer"></i></h1></button>
+                <button onclick="PointsV6() , buyEnable()" id="NB5" class="Next myButton"><h1>+32 <i class="fa-solid fa-arrow-pointer"></i></h1></button>
+            </div>
 
-    <p id="PointsDisplayV2">0</p>
-    <button onclick="PointsV2()">Click Here To Gain 2 Points</button>
+        </div>
+        <button onclick="alert('done wasting time? join GOA') , buyEnable()" id="SB">Secret Button</button>
+        <div class="bButtons">
+            <h3 >buy buttons <b>here</b></h3>
+            <button class="buyButton" id="BB1" onclick="Buttons()">50 click points <p>+2 <i class="fa-solid fa-arrow-pointer"></i></button></button>
+            <button class="buyButton" id="BB2" onclick="Buttons()">100 click points <p>+4 <i class="fa-solid fa-arrow-pointer"></i></p></button></button>
+            <button class="buyButton" id="BB3" onclick="Buttons()">500 click points <p>+8 <i class="fa-solid fa-arrow-pointer"></i></p></button></button>
+            <button class="buyButton" id="BB4" onclick="Buttons()">750 click points <p>+16 <i class="fa-solid fa-arrow-pointer"></i></p></button></button>
+            <button class="buyButton" id="BB5" onclick="Buttons()">1000 click points <p>+32 <i class="fa-solid fa-arrow-pointer"></i></p></button></button>
+            <button class="buyButton" id="SecretButton" onclick="Buttons()">3000 click points <b>Secret Button</b></button>
+        </div>
+    </div>
 
-    <p id="Both">0</p>
-    <button onclick="sum()">Click Here To Sum Both Points</button>
-    
-    <script>
-        let counter = 0
-
-        function Points() {
-            counter += 1
-            document.getElementById("PointsDisplay").textContent = counter
-        }
-
-        let counterV2 = 0
-        
-        function PointsV2(){
-            counterV2 += 2
-            document.getElementById("PointsDisplayV2").textContent = counterV2
-        }
-
-        function sum(){
-            document.getElementById("Both").textContent = counter + counterV2
-        }
-
-    </script>
+    <script src="./script.js"></script>
 
 </body>
 </html>
