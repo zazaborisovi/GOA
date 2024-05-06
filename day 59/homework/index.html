@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>homework</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+     <body>
+        <!--homework N1 , N3-->
+        <form action="">
+            <input type="text" placeholder="string number" id="stringNumber">
+            <input type="number" placeholder="number" id="number">
+            <button type="button" onclick="sum()">Submit</button>
+        </form>
+        <!--homework N2-->
+        <form action="">
+            <input type="text" placeholder="text to create paragraph with" id="textInput">
+            <input type="text" placeholder="paragraph color" id="colorInput">
+            <input type="text" placeholder="background color" id="bgColorInput">
+            <button type="button" onclick="addParagraph()">Submit</button>
+        </form>
+
+        <!--homework N5-->
+        <div>
+            <button onclick="style.backgroundColor ='green'">Change color inline</button>
+            <button id="myButton" onclick="changeBgColor()">Change color internal</button>
+            <button id="myButtonN2" onclick="changeBgColorN2()">Change color external</button>            
+        </div>
+
+        
+        <script>
+            function changeBgColor(){
+            let myButton = document.getElementById("myButton")
+            myButton.style.backgroundColor = "purple"                
+            }
+
+        </script>
+        <script src="./script.js"></script>
+
+     </body>
+</html>
