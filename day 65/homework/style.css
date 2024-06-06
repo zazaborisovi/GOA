@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    height: 45px;
+    width: 155px;
+}
+button{
+    height: 50px;
+    width: 160px;
+    border: 1px solid blue;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(0, 140, 255);
+    box-shadow: 3px 3px 5px black;
+}
+button:hover{
+    color: rgb(0, 140, 255);
+    background-color: white;
+    border: 1px solid black;
+    transition: 1s;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    font-size: 25px;
+    box-shadow: 1px 1px 3px black;
+}
+#div1{
+    display:grid;
+    grid-template-columns: repeat(15 , 30px);
+    grid-template-rows: repeat(15 , 30px);
+}
+#div2{
+    display: flex;
+    justify-content: space-evenly;
+    grid-row: 7/16;
+    grid-column: 1/16;    
+}
+h1{
+    font-family: "Cactus Classical Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 64px;
+    align-self: center;
+    justify-self: center;
+    grid-row: 1/4;
+    grid-column: 1/16;
+}
+h2{
+    font-size: 40px;
+    align-self: center;
+    justify-self: center;
+    grid-column:1/16;
+    grid-row: 4/7;
+}

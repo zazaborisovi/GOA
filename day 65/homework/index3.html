@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>account</title>
+        <link rel="stylesheet" href="./style3.css">
+    </head>
+     <body>
+        <div id="div1">
+            <form action="" id="myForm">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required maxlength="15" placeholder="max length 15">
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" required maxlength="3">
+                <label for="birthDate">Birth Month:</label>
+                <input type="month" name="birthDate" id="birthDate" required>
+                <label for="termsOfService">I Agree With Terms Of Service
+                <input type="checkbox" name="termsOfService" id="termsOfService" required>
+                </label>
+                <button type="button" onclick="createAccount()">Sign Up</button>
+            </form>
+        </div>
+        <div id="div2">
+            <ul>
+                <li>username: <b id="accUsername"></b></li>
+                <li>age: <b id="accAge"></b></li>
+                <li>birth date: <b id="accBirthDate"></b></li>
+            </ul>
+        </div>
+
+        <script src="./script3.js"></script>
+
+     </body>
+</html>
