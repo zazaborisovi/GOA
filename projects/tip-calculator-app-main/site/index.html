@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frontend Mentor | Tip calculator app</title>
+    <script src="https://kit.fontawesome.com/57925fd35f.js" crossorigin="anonymous"></script>
+  </head>
+   <body>
+    <div>
+      <h1 style="font-weight: bold;">SPLI</h1>
+      <h1 style="font-weight: bold;">TTER</h1>
+    </div>
+    <div id="mainDiv">
+      <div id="tipAmount">
+        <div id="childDiv1">
+          <ol>
+            <li>Tip Amount
+              <ul>
+                <li>/ person</li>
+              </ul>
+            </li>
+          </ol>
+          <div class="forCounters">
+            <h2 id="totalTipOnPerson">0</h2>
+          </div>
+        </div>
+        <div id="childDiv2">
+          <ol>
+            <li>Total
+              <ul>
+                <li>/ person</li>
+              </ul>
+            </li>
+          </ol>
+          <div class="forCounters">
+          <h2 id="totalTipAmount">0</h2>
+          </div>
+        </div>
+        <button id="reset" onclick="reset()">Reset</button>
+      </div>
+      <div id="bill">
+        <h2>bill</h2>
+        <form action="" onkeypress="return handleKeyPress(event)">
+          <h1>$</h1><input type="number" name="bill" id="billAmount" class="numberInput">
+        </form>        
+      </div>
+      <div id="selector">
+        <div style="width: 475px;"><h2>select tip %</h2></div>
+        <button class="myButton" type="button" onclick="tipCalculator(5) , style.backgroundColor = 'hsl(172, 67%, 45%)'">5%</button>
+        <button class="myButton" type="button" onclick="tipCalculator(10)">10%</button>
+        <button class="myButton" type="button" onclick="tipCalculator(15)">15%</button>
+        <button class="myButton" type="button" onclick="tipCalculator(25)">25%</button>
+        <button class="myButton" type="button" onclick="tipCalculator(50)">50%</button>
+        <form action="">
+          <input type="number" id="custom" placeholder="Custom" onkeypress="return handleKeyPress(event) , tipCalculator(document.getElementById('custom').value)">
+        </form>
+      </div>
+      <div id="userValue">
+        <h2>Number of People</h2>
+        <h1><i class="fa-solid fa-user"></i></h1><input type="number" name="userValue" id="usrValue" class="numberInput" min="1" onkeypress="return handleKeyPress(event)">
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+   </body>
+</html>
