@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{ 
+    height: 75px;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+}
+header section {
+    justify-content: space-between !important;
+    align-items: center;
+    padding-top: 20px;
+}
+header section .middleh nav ul li a {
+    text-decoration: none;
+    color: hsl(228, 39%, 23%);
+    font-size: 18px;
+    padding: 0px 30px;
+    font-weight: bold;
+}
+header section .middleh nav ul li a:hover{
+    color: hsl(0, 0%, 49%);
+    font-size: 20px;
+    padding: 0px 27px;
+    transition: 0.8s ease;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    height: 100vh;
+    background-image: url(images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position:120% -200px;
+}
+ul{
+    list-style-type: none;
+}
+#parentDiv{
+    display: flex;
+    gap: 250px;
+}
+main{
+    display: flex;
+    gap: 250px;
+}
+#div1 , #div2 , #div3 , #div4{
+    width: 500px;
+    height: 500px;
+}
+#div1{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    height: 600px;
+}
+h1{
+    font-size: 64px;
+}
+h3{
+    color: hsl(227, 12%, 61%);
+    width: 400px;
+}
+.myButton{
+    font-size: 17px;
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(12, 88%, 59%);
+    transition: 0.8s ease;
+    box-shadow: 0px 5px 2px hsla(12, 88%, 59%, 0.733);
+}
+.myButton:hover{
+    background-color: hsla(12, 88%, 59%, 0.706);
+    transition: 0.8s ease;
+    transform: scale(1.08);
+    color:hsl(13, 100%, 96%);
+    box-shadow: none;
+}
+li h4{
+    color: hsl(227, 12%, 61%);
+}
+#parentDiv2{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: space-around;
+}
+#parentDiv2 img{
+    width: 85px;
+    position:absolute;
+}
+#parentDiv2 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+#wts{
+    font-size: 45px;
+    color: hsl(228, 39%, 23%);
+}
+.names{
+    font-size: 23px;
+    color: hsl(228, 39%, 23%);
+    background-color: hsl(0, 0%, 98%);
+}       
+.label{
+    font-size: 16px;
+    background-color: hsl(0, 0%, 98%);
+}
+.wtsDiv{
+    display: flex;
+    height: 195px;
+    justify-content: end;
+}
+.bgcolor{
+    background-color: hsl(0, 0%, 98%);
+    border-top: 30px solid hsl(0, 0%, 98%);
+}
+.childDivs{
+    display: flex;
+    height: 200px;
+    background-color: white;
+}
+.sytw h1{
+    width: 800px;
+    color: hsl(0, 0%, 98%);
+    font-size: 65px;
+
+}
+.sytw{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsl(12, 88%, 59%);
+    background-image: url(./images/bg-simplify-section-desktop.svg);
+    background-repeat:no-repeat;
+    background-position: -99% 0px;
+}
+.btn2 {
+    background-color: hsl(0, 0%, 100%);
+    height: 45px;
+    width: 175px;
+    box-shadow: 0px 5px 2px hsla(0, 0%, 100%, 0.733);
+    color:  hsla(12, 88%, 59%, 0.733);
+}
+.btn2:hover{
+    background-color: hwb(0 86% 2%);
+    color:  hsla(0, 0%, 0%, 0.733);
+}
+#footers{
+    width: 100%;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color:hsl(233, 12%, 13%);
+    height: 350px;
+    list-style-type: none;
+}
+footer div{
+    width: 175px;
+    height: 150px;
+}
+#fDiv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 15px;
+}
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-size: 18px;
+    color: hsl(0, 0%, 100%);
+}
+footer li{
+    list-style: none;
+}
+footer li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+#fDiv4 {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    width: 280px;
+    gap: 100px 10px;
+    flex-wrap: wrap;
+}
+.btn3{
+    width: 70px;
+    height: 40px;
+}
+footer input{
+    width: 200px;
+    height: 45px;
+    border-radius: 25px;
+    border: none;
+}
+footer p{
+    color: gray;
+}
