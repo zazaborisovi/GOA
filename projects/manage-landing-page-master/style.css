@@ -220,3 +220,15 @@ footer input{
 footer p{
     color: gray;
 }
+@media screen and (max-width: 375px){
+    #menu{
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #menu li{
+        display: none;
+    }
+}
