@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><b>homework</b></p>
+
+    <p>random P tag</p>
+
+    <script>
+        x = prompt("what element to import: ")
+        let newElement = document.createElement(x)
+        const body = document.body
+        body.appendChild(newElement)
+
+        // children - დამიბრუნებს ყველა შვილ ელემენტს
+        // firstElementChild - დამიბრუნებს პირველ შვილ ელემენტს
+        // lastElementChild - დამიბრუნებს ბოლო შვილ ელემენტს
+        // nextElementSibling - დამიბრუნებს კონკრეტული ელემენტის შემდეგ დედმამიშვიულს
+        // previousElementSibling - დამიბრუნებს კონკრეტული ელემენტის წინა დედმამიშვიულს
+
+        console.log(body.children)
+        console.log(body.firstElementChild)
+        console.log(body.lastElementChild)
+        console.log(body.nextElementSibling)
+        console.log(body.previousElementSibling)
+
+    </script>
+
+</body>
+</html>
