@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            position: relative;
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box"><h1>box</h1></div>
+
+    <script>
+        let box = document.getElementById("box")
+        const moveValue = 10
+        let x = 0
+        let y = 0
+        document.addEventListener("keydown" , function(){
+            if(event.key.startsWith("Arrow")){
+                if (event.key === "ArrowUp"){
+                    y -= moveValue
+                }
+                else if(event.key === "ArrowDown"){
+                    y += moveValue
+                }
+                if (event.key === "ArrowLeft"){
+                    x -= moveValue
+                }
+                else if(event.key === "ArrowRight"){
+                    x += moveValue
+                }
+            }
+            box.style.top = `${y}px`
+            box.style.left = `${x}px`
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        #container{
+            background-color: black;
+            height: 500px;
+            width: 500px;
+            position: absolute;
+        }
+        #child{
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            position: relative; 
+        }
+    </style>
+</head>
+<body>
+    <div id="container"><div id="child"></div></div>
+    
+
+    <script>
+        let mydiv = document.getElementById("child")
+        let x = 0
+        let y = 0
+        const moveDown = setInterval(function(){
+            mydiv.style.top = `${y}px`
+            y += 10
+            if (y == 450){
+                clearInterval(moveDown)
+                const moveToRight = setInterval(function(){
+                    mydiv.style.left = `${x}px`
+                    x += 10
+                    if (x == 450){
+                        clearInterval(moveToRight)
+                        const movetoUp = setInterval(function(){
+                            mydiv.style.top = `${y}px`
+                            y -= 10
+                            if(y == 0){
+                                clearInterval(movetoUp)
+                                const moveToLeft = setInterval(function() {
+                                    mydiv.style.left = `${x}px`
+                                    x -= 10
+                                if(x == 0){
+                                    clearInterval(moveToLeft)
+                                }
+                                }, 10);
+                            }
+                        }, 10)
+                    }
+                }, 10);
+            }
+        }, 10)
+    </script>
+
+</body>
+</html>
