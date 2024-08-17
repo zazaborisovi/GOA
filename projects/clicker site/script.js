@@ -1,8 +1,9 @@
 let counter = 0
+let PointsDisplay = document.getElementById("PointsDisplay")
 
 function Points() {
     counter += 1
-    document.getElementById("PointsDisplay").textContent = counter
+    PointsDisplay.textContent = counter
 }
 function PointsV2(){
     counter += 2

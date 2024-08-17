@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="testOnload()">
+    
+    <button onclick="testOnClick()">aa</button>
+    <button onmouseover="testOnMouseOver()">bb</button>
+    <button onmouseout="testOnMouseOut()">cc</button>
+    <button onmousedown="testOnMouseDown()">dd</button>
+    <script>
+        i = 0
+        function testOnClick(){
+            console.log(i += 5)
+        }
+        function testOnMouseOver(){
+            console.log(i += 10)
+        }
+        function testOnMouseOut(){
+            console.log(i += 15)
+        }
+        function testOnMouseDown(){
+            console.log(i += 20)
+        }
+        function testOnload(){
+            console.log("loaded")
+        }
+        window.addEventListener("keydown", function(e) {
+            if(e.key == "E"){
+                console.log(e)
+            }
+        },)
+        window.addEventListener("resize", function(e){
+            console.log(window.innerHeight)
+        },)
+    </script>
+
+</body>
+</html>
