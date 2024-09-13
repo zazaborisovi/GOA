@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+     <body>
+        
+        <script>
+            //homework 1
+            class Person{
+                constructor(name , age){
+                    this.name = name
+                    this.age = age
+                }
+                greet(){
+                    console.log(`hello my name is ${this.name} and im ${this.age} old`)
+                }
+            }
+            //homework 2
+            class Student extends Person{
+                constructor(name , age , grade){
+                    super(name , age)
+                    this.grade = grade
+                }
+                study(){
+                    console.log(`${this.name} is studying`)
+                    console.log(this.grade)
+                }
+            }
+            let person = new Person("zaza" , 17)
+            person.greet()
+            console.log("-------------")
+            let student = new Student("zaza" , 17 , 11)
+            student.study()
+            console.log("-------------")
+            //homework 3
+            class Calculator{
+                static add(a , b){
+                    return a + b
+                }
+                static substract(a , b){
+                    return a - b
+                }
+                static multiply(a , b){
+                    return a * b
+                }
+                static divide(a , b){
+                    return a / b
+                }
+            }
+            console.log(Calculator.add(5 , 5))
+            console.log(Calculator.substract(5 , 5))
+            console.log(Calculator.multiply(5 , 5))
+            console.log(Calculator.divide(5 , 5))
+            console.log("-------------")
+            //homework 4
+            class Car{
+                constructor(model , year){
+                    this.model = model
+                    this.year = year
+                }
+                carInfo(){
+                    console.log(`car model is ${this.model} car was made in ${this.year}`)
+                }
+                startEngine(){
+                    console.log(`${this.model} engine started`)
+                }
+                stopEngine(){
+                    console.log(`${this.model} engine stopped`)
+                }
+            }
+            let car1 = new Car("Ford Mustang" , 1967)
+            let car2 = new Car("Toyota Supra" , 1994)
+            car1.startEngine()
+            car2.startEngine()
+            car1.stopEngine()
+            car2.stopEngine()
+            console.log("-------------")
+            //homework 5
+            class Animal{
+                constructor(name , age , origin , weight , talk){
+                    this.name = name
+                    this.age = age
+                    this.origin = origin
+                    this.weight = weight
+                    this.talk = talk
+                }
+                animalInfo(){
+                    console.log(`animal name: ${this.name} animal age: ${this.age} animal origin: ${this.origin} animal weight: ${this.weight}`)
+                    console.log(`this animal ${this.talk}s`)
+                }
+            }
+            let dog = new Animal("gela" , 5 , "dog" , "300kg" , "meow")
+            dog.animalInfo()
+        </script>
+
+     </body>
+</html>

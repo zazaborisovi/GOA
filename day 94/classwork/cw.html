@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>classwork</title>
+    </head>
+    <body>
+        
+        <script>
+            const handlearr = (a , b) =>{
+                console.log(a , b)
+            }
+            handlearr([1 , 5 , 4] , [3 , 2 , 1])
+            // rest gamoiyeneba functionebtan samushaod
+            //                           rest v qmnis arrays sadac sheinaxeba darchenili argumentebi romlebistvisac argvaqvs argumentebi chawerili
+            let handleArrRest = (a , b , ...arr) =>{
+                //spread qmnis rest arrays dakopirebul versias sadac shegvidzlia chavamatot ricxvebi
+                const copyArr = [...arr  , 6] //<-- am sintaqsis gamoyenebit
+                console.log(arr)
+                return [a , b , copyArr  , "gaiyopa array" , ...copyArr]
+            }
+            console.log(handleArrRest(1 , 2 , 3 , 4 , 5))
+
+            // classes
+            const myObj = {
+                name: "zaza",
+                surname: "borisovi"
+            } 
+            console.log(myObj)
+
+            // class FirstClass{
+            //     constructor(name , surname){
+            //         this.name = name
+            //         this.surname = surname
+            //     }
+            //     whatName(){
+            //         console.log(`name is ${this.name}`) 
+            //     }
+            // }
+            // const firstclass = new FirstClass("zaza" , "borisovi")
+            // console.log(firstclass)
+
+            const secondClass = {
+                constructor(name , surname){
+                    this.name = name
+                    this.surname = surname
+                }
+            }
+            // const secondclass = new firstClass("zaza2" , "borisovi2")
+            // console.log(secondclass)
+            // console.log("------static------")
+            // class Points{
+            //     constructor(x , y){
+            //         this.x = x
+            //         this.y = y
+            //     }
+            //     static distance(a , b){
+            //         const dx = a.x - b.x
+            //         const dy = a.y - b.y
+            //         return Math.hypot(dx , dy)
+            //     }
+            // }
+            // const p1 = new Points(7 , 2)
+            // const p2 = new Points(3 , 8)
+            // console.log(Points.distance(p1 , p2))
+
+            class Animal{
+                constructor(origin , animaltalk){
+                    this.origin = origin
+                    this.animaltalk = animaltalk
+                }
+                get talk(){
+                    return this.istalking()
+                }
+                istalking(){
+                    return `this animal ${this.animaltalk}-s`
+                }
+
+            }
+            const dog = new Animal("dog" , "bark")
+            console.log(dog.talk)
+        </script>
+
+    </body>
+</html>
