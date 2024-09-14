@@ -1,7 +1,5 @@
 from turtle import *
 
-
-
 speed(50)
 width(5)
 begin_fill()
