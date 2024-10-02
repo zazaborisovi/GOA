@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: hsl(30, 54%, 90%);
+}
+#mainDiv{
+    height: 1400px;
+    width: 500px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+img{
+    width: 450px;
+}
+p{width: 400px;}
+#prepTime{
+    border-radius: 10px;
+    width: 400px;
+    height: 125px;
+    background-color: hsl(330, 100%, 98%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+div h3{color: hsl(332, 51%, 32%);}
+div ul li{
+    font-weight: bold;
+    color: hsl(30, 10%, 34%);
+}
+#ingredients{
+    width: 70%;
+    border-top: 1px solid hsl(24, 5%, 18%);
+    padding-top: 20px;
+}
+#instructions{
+    width: 75%;
+    border-top: 1px solid hsl(24, 5%, 18%);
+    padding-top: 20px;
+}
+table{
+    border-collapse: collapse;
+    background-color: white;
+    width: 390px;
+}
+td{
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    color: #5f3a2d;
+}
+tabletd:nth-child(2) {
+    text-align: right;
+}
+#nutrion{
+    border-top: 1px solid hsl(24, 5%, 18%);
+    padding-top: 20px;
+}
