@@ -1,0 +1,1 @@
+export let arrWith3elements = ["element1" , "element2" , "element3"]

@@ -17,15 +17,15 @@ btn.addEventListener("click" , function(){
 
     ul[0].appendChild(li)
 
-    p.addEventListener("click" , function(){
-        if (p.style.textDecoration != "line-through"){
-            p.style.textDecoration = "line-through"
-        }
-        else{
-            p.style.textDecoration = "none"
-        }
+    // p.addEventListener("click" , function(){
+    //     if (p.style.textDecoration != "line-through"){
+    //         p.style.textDecoration = "line-through"
+    //     }
+    //     else{
+    //         p.style.textDecoration = "none"
+    //     }
         
-    })
+    // })
     delBtn.addEventListener("click" , function(){
         ul[0].removeChild(li)
     })
