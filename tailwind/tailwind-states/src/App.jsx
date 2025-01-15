@@ -186,7 +186,93 @@ export default function App() {
           Processing...
         </div>
         <button class="motion-safe:hover:-translate-x-0.5 motion-safe:transition border-2 border-black">sadd</button>
-
+        <div className='w-52 flex justify-items-center items-center flex-col bg-slate-400 border-2 border-black rounded-lg'>
+          <p className='text-lg'>Social Security Number</p>
+          <input type="text" placeholder='000-00-0000' />
+          <p className='contrast-more:opacity-100 text-slate-500'>We need this to steal your identity.</p>
+        </div>
+        {/* Forced colors mode */}
+        <div className='h-auto w-auto rounded-xl flex flex-row'>
+          <label className='w-auto h-auto flex flex-col'>
+            choose theme
+            <input type="radio" className='forced-colors:appearance-auto appearance-none' />
+            <p className='text-lg forced-colors:block hidden'>
+              cyan
+            </p>
+            <div className='flex'>
+              <div className='relative border-2 border-cyan-500 bg-cyan-200 w-16 h-16 rounded-lg '>
+                <div className='forced-colors:hidden h-10 w-10 rounded-full bg-cyan-400 absolute left-2 top-2'></div>
+                <div className='forced-colors:hidden h-10 w-10 rounded-full bg-cyan-500 absolute left-4 top-4'></div>
+              </div>
+              <div className='relative border-2 border-green-500 bg-green-200 w-16 h-16 rounded-lg'>
+                <div className='forced-colors:hidden h-10 w-10 rounded-full bg-green-400 absolute left-2 top-2'></div>
+                <div className='forced-colors:hidden h-10 w-10 rounded-full bg-green-500 absolute left-4 top-4'></div>
+              </div>
+              <div className='relative border-2 border-purple-500 bg-purple-200 w-16 h-16 rounded-lg'>
+                <div className='forced-colors:hidden h-10 w-10 rounded-full bg-purple-400 absolute left-2 top-2'></div>
+                <div className='forced-colors:hidden h-10 w-10 rounded-full bg-purple-500 absolute left-4 top-4'></div>
+              </div>
+            </div>
+          </label>
+        </div>
+        {/* Viewport orientation */}
+        <div>
+          <div className='portrait:hidden'>portrait mode</div>
+          <div className='landscape:hidden'><p>landscape mode</p></div>
+        </div>
+        {/* Print styles */}
+        <div>
+          <article className='print:hidden'>
+            <h1>test h1 tag</h1>
+            <p>test p tag</p>
+          </article>
+          <div className='hidden print:block'>
+            secret print div
+          </div>
+        </div>
+        {/* Supports rules */}
+        <div className='bg-black/75 supports-[backdrop-filter]:bg-black/25 supports-[backgdrop-filter]:backdrop-blur'>
+          test div tag
+        </div>
+        {/* ARIA states */}
+        <div className='*:text-white'>
+          <div aria-checked='true' className='aria-checked:bg-black'>div1</div>
+          <div aria-busy='true' className='aria-busy:bg-black'>div2</div>
+          <div aria-disabled='true' className='aria-checked:bg-black'></div>
+          <div aria-expanded='true' className='aria-expanded:bg-black'></div>
+          <div aria-hidden='true' className='aria-hidden:bg-black'></div>
+          <div aria-pressed='true' className='aria-pressed:bg-black'></div>
+          <div aria-readonly='true' className='aria-readonly:bg-black'></div>
+          <div aria-required='true' className='aria-required:bg-black'></div>
+          <div aria-selected='true' className='aria-selected:bg-black'></div>
+        </div>
+        {/* Data attributes */}
+        <div data-size='large' className='data-[size=large]:p-8 border-2 border-black'>
+         <div data-ui="checked active" class="data-checked:underline"></div>
+        </div>
+        {/* RTL support */}
+        <div className='w-52 h-10 border-2 border-black'>
+          <div className='ltr:ml-3 rtl:mr-3 border-2 border-black w-14'>
+            <p>test</p>
+          </div>
+        </div>
+        {/* Open/closed state */}
+        <div>
+          <details className='open:bg-white dark:open:bg-slate-600 open:ring-2 open:ring-black'>
+            <summary>open for details</summary>
+            detail example
+          </details>
+        </div>
+        {/* Using arbitrary variants */}
+        <div className='[&_p]:bg-black flex [@supports(display:grid)]:grid'>
+          <a>a tag</a>
+          <p>p tag</p>
+          <button className='[@media(any-hover:hover){&:hover}]:opacity-100'>button</button>
+        </div>
+        {/* Using with your own classes */}
+        <p className='content-auto'>
+          test p tag
+        </p>
     </div>
   )
 }
