@@ -19,3 +19,7 @@ function build2(column , row){
     }
 }
 build2(5 , 5)
+
+console.log("------------")
+
+build2(5 , 15)
