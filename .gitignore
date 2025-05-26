@@ -16,3 +16,6 @@ renamer.js
 *.sw?
 
 a
+.gitignore
+.json
+.js
