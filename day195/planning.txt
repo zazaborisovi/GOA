@@ -1,0 +1,7 @@
+vite
+shadcn tailwind axios dotenv cors  (if nodejs{
+    express
+})
+node.js / django
+
+neonDB / mongoDB
