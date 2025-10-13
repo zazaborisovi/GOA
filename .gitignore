@@ -20,3 +20,5 @@ a
 .json
 .js
 clerk-react
+package.json
+package-lock.json
