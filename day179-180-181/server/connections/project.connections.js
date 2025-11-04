@@ -15,7 +15,7 @@ export const createProject = async (req, res) => {
     console.log(req.body)
   try {
     const project = await ProjectModel.create(req.body)
-    res.status(201).json(project)
+    res.status(201).json(project) 
   } catch (error) {
     console.error("error creating project:", error)
     res.status(400).json({ message: "project creation failed", error })

@@ -3,6 +3,12 @@ dist
 dist-ssr
 *.local
 renamer.js
+.gitignore
+.json
+.js
+clerk-react
+package.json
+package-lock.json
 
 # Editor directories and files
 .vscode/*
@@ -16,9 +22,3 @@ renamer.js
 *.sw?
 
 a
-.gitignore
-.json
-.js
-clerk-react
-package.json
-package-lock.json
