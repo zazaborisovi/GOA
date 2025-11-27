@@ -1,0 +1,9 @@
+git clone <url required> <name optional>- clones remote or local repository
+
+git remote - lists the the names of your remote repositories
+
+git fetch - fetches new versions from remote repositories(has url by default)
+
+git merge <branch name> - merges two branches together moving code from given branch to branch you are currently using command in
+
+git push branch <branch name> - pushes the code to the specified branch
