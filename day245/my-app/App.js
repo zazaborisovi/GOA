@@ -1,0 +1,17 @@
+import { NavigationContainer } from "@react-navigation/native"
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
+import HomeScreen from "./screens/home";
+import DetailsScreen from "./screens/details";
+
+const Tab = createBottomTabNavigator();
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="home" component={HomeScreen}/>
+        <Tab.Screen name="details" component={DetailsScreen} />
+      </Tab.Navigator>
+    </NavigationContainer>
+  );
+}

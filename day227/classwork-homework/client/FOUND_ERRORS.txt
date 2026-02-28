@@ -1,0 +1,5 @@
+Writing issues observed while improving the UI:
+
+1. Chat context imports useRef but it was never imported, which would crash the client the moment ChatProvider mounts. I added the missing import.
+2. The ChatProvider state named "message" is initialized as an empty string but then treated like an array with spread syntax (e.g., setMessage((prev) => [...prev, message])). As soon as the first message arrives, this code throws because strings are iterated character-by-character. The state should likely be an array named messages.
+3. The App component referenced Signin, Signup, and Chat page modules that did not exist, so routing rendered nothing but errors. I created properly designed page components for the referenced routes and shared styling.
